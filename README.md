@@ -1,2 +1,1 @@
-# pming
-pming
+# PMINGKR
