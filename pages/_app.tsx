@@ -7,6 +7,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FTGWXZFL8L"
+        ></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
