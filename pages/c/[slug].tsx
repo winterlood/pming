@@ -25,7 +25,11 @@ const ContritubePage = (props: Props) => {
     );
   } else {
     if (typeof window !== "undefined") {
-      window.location.replace(props.redirect_url);
+      if (process.env.NODE_ENV === "development") {
+        console.log("이동 : ", props.redirect_url);
+      } else {
+        window.location.replace(props.redirect_url);
+      }
     }
     return (
       <div>
